@@ -18,17 +18,17 @@
 
 *Page d’accueil  (x1)*
 <p align="center">
-  <img align="center" width="80%" alt="Page d'accueil" src="accueil1.png"/>
+  <img align="center" width="80%"  src="accueil1.png"/>
 </p>
  >●Affichage de la localisation des restaurants. À terme il sera possible de choisir salocalisation pour trouver des restaurants proches d’un certain lieu.
  
  >●Une courte présentation de l’entreprise.
  <p align="center">
-  <img align="center" width="80%" alt="Page d'accueil" src="accueil2.png"/>
+  <img align="center" width="80%"  src="accueil2.png"/>
 </p>
  >●Une section contenant les 4 menus sous forme cartes. Au clic sur la carte,l’utilisateur est redirigé vers la page du menu.
  <p align="center">
-  <img align="center" width="80%" alt="Page d'accueil" src="accueil3.png"/>
+  <img align="center" width="80%"  src="accueil3.png"/>
 </p>
 *Pages de menu (x4)*
 
@@ -40,7 +40,7 @@
  
  >●Au clic sur “Contact”, un renvoi vers une adresse mail est effectué.
  <p align="center">
-  <img align="center" width="80%" alt="Page d'accueil" src="accueil4.png"/>
+  <img align="center" width="80%"  src="accueil4.png"/>
 </p>
 *Header*
  
@@ -67,3 +67,8 @@
  >●À l’arrivée sur la page, les plats devront apparaître progressivement avec un légerdécalage dans le temps. Ils pourront soit apparaître un par un, soit par groupe “Entrée”, “Plat” et “Dessert”. Un exemple de l’effet attendu est fourni.
  
  >●Le visiteur peut ajouter les plats qu'il souhaite à sa commande en cliquant dessus.Cela fait apparaître une petite coche à droite du plat. Cette coche devra coulisser dela droite vers la gauche. Pour cette première version, l’effet peut apparaître au survolsur desktop au lieu du clic. Si l’intitulé du plat est trop long, il devra être rogné avecdes points de suspension. Un exemple de l’effet attendu est fourni
+<p align="center">
+    <video width="80%"  controls>
+        <source src="animation.mp4" type="video/mp4">
+    </video>
+</p>
