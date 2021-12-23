@@ -1,0 +1,2346 @@
+
+@font-face {
+     font-family: "roboto";
+     src: url("Roboto-Regular.ttf")
+    }
+@font-face {
+     font-family: "shrikhand";
+     src: url("shrikhand.regular.ttf")
+    }
+@mixin zeroLeftRightMargPadd($UNO,$DUO,$TRIO,$QUATRO) {
+     margin-left: $UNO;
+     margin-right: $DUO;
+     padding-left: $TRIO;
+     padding-right: $QUATRO;
+}
+
+//----------Version Mobile----------->
+
+@media all and (min-width:1px) and (max-width:800px) {
+body{
+     @include zeroLeftRightMargPadd(0,0,0,0); 
+     margin-bottom: 0;
+     padding-bottom: 0;
+     background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(230,230,230,1) 10%);
+     min-width: 415px;
+}
+html {
+     font-size: 100%;
+     @include zeroLeftRightMargPadd(0,0,0,0);
+     margin-bottom: 0;
+     padding-bottom: 0;    
+}
+img {
+     object-fit: cover;
+ }
+//----------LOADER---------->
+.TransparenSite{
+     position: absolute;
+     animation-duration: 5s;
+     animation-iteration-count:1;
+     background: linear-gradient(white,#FF79DA,#9356DC);
+     z-index: -30;
+     width:auto;
+     height: auto;
+     margin: auto;
+     padding-top: 300px;
+     color: gray;
+     font-size: 0rem;
+     justify-content: center;
+     align-content: center;
+     vertical-align: auto;
+     animation-name : LoADeur ;
+     z-index: 30;
+     }
+ @keyframes LoADeur {
+          from {  background: linear-gradient(white,#FF79DA);
+               z-index: 30;
+               width: 100%;
+               height: 2150px; 
+               opacity: 100%;
+               animation-delay: 0.2s;
+          animation-duration: 0.2s;
+          font-size: 5rem;
+          justify-content: center;
+          align-content: center;
+          text-align: center;
+          vertical-align: auto
+          }
+          25% {  background: linear-gradient( white,#FF79DA);
+                    z-index: 30;
+                    width: 100%;
+                    height: 2150px; 
+                    opacity: 100%;
+                    animation-delay: 0.2s;
+     animation-duration: 0.2s;
+     font-size: 6rem;
+     justify-content: center;
+     align-content: center;
+     text-align: center;
+     vertical-align: auto}
+          50%  { background: linear-gradient(white,#FF79DA);
+               z-index: 30;
+               width: 100%;
+               height: 2150px;
+               opacity: 70%;
+               animation-delay: 0.2s;
+     animation-duration: 0.2s; 
+     font-size: 4rem;
+     justify-content: center;
+     align-content: center;
+     text-align: center;
+     vertical-align: auto} 
+          70%  { background: linear-gradient(white,#FF79DA );
+                    z-index: 30;
+                    width: 100%;
+                    height: 2150px;
+                    opacity: 0%;
+                    animation-delay: 0.2s;
+                    animation-duration: 0.2s;
+                    font-size: 8rem;
+                    justify-content: center;
+                    align-content: center;
+                    text-align: center; 
+                    vertical-align: auto} 
+          to   { background: linear-gradient(white);
+               z-index: 30;
+               width: 100%;
+               height: 2150px;
+               opacity: 0%;
+               animation-delay: 0.2s;
+               animation-duration: 0.2s;
+               display: none ;
+               visibility: hidden; 
+               font-size: 5rem;
+               justify-content: center;
+               align-content: center;
+               text-align: center;
+               vertical-align: auto}
+        }
+//----------HEADER----------->
+
+header {
+     @include zeroLeftRightMargPadd(0,0,0,0);    
+     justify-content: center;
+     padding-bottom: 0;
+     margin-bottom: 0;
+     
+}
+#headTitle {
+     justify-content: center;
+     @include zeroLeftRightMargPadd(0,0,0,0);   
+     margin-bottom: 0;
+     width: 100%;
+     background-color: white;
+     padding-top: 50;     
+}
+h1 {
+     margin: 0;
+     font-size: 2.2rem;
+     font-family: "shrikhand";
+     justify-content: center;
+     text-align: center;
+}
+
+#infoMap {
+     @include zeroLeftRightMargPadd(0,0,0,0);    
+     padding-bottom: 0;
+     margin-bottom: 0;
+     padding-top: 25px;
+     margin-top: 0;
+     width: 100%;
+     border-top: #a0a0a0f2 solid 3px;
+     background-color: rgb(218, 218, 218);
+     
+}
+.TransY {
+     justify-content: center;
+     text-align: center;
+     transform: translateY(-50%);
+     padding-left: 55px;
+}
+.fas fa-map-marker-alt {
+     font-family: "Font Awesome 5 Free";
+}
+input {
+     font-size: 1rem;
+     font-family: "roboto";
+     margin: 2px;
+     border: none;
+     font-weight: bold;
+     background-color: rgb(218, 218, 218);
+     padding-left: 10px;
+}
+//----------Header-(((Page)))---------->
+#accueilReturn a i{
+     position: absolute;
+     top:15px;
+     font-size: 2em;
+     color: black;
+     left:2%
+}
+.imgPlanette {
+     z-index: -10;
+     width: 100%;
+     height: 295px;
+     margin: 0;
+     padding: 0;
+}
+//----------Nom du restaurant-(((Page)))---------->
+
+.restName div{
+     width: 100%;
+     position:absolute;
+     top:275px;
+     z-index: 0;
+     font-size: 2.2rem;
+     font-family: "shrikhand";
+     justify-content: left;
+     padding: 25px 5px 5px 20px;
+     border-radius: 30px 30px 0 0;
+     background-color:  rgb(230, 230, 230);
+}
+.restName a i {
+     z-index: 10;
+}
+//----------Titres des sections (((Page)))---------->
+.entrees {
+     background-color: rgb(230, 230, 230);
+     padding-top: 0px;
+     font-size: 1.2rem;
+     font-family: "roboto";
+}
+.titleFood{
+     padding-bottom: 10px;
+     padding-left:20px ; 
+     
+}
+.bordGreen {
+     border-bottom: 3px turquoise solid;
+     display: inline-flex;
+     flex-wrap: wrap;
+     padding-bottom : 5px;
+     padding-right: 0;
+     border-left: 0;
+}
+.restOfText{
+     border-left: 0;
+     padding-right: 0;
+     display: inline-flex;
+     flex-wrap: wrap;
+     position: relative;
+     right: 4px;
+
+}
+//----------Noms des plats et prix (((Page)))---------->
+.animationDeOUfGedin {
+     text-decoration: none;
+     display: flex;
+     flex-wrap: wrap;
+     width: 100%;
+     justify-content: space-between;
+     &:hover {
+          .price {      
+               display: flex;
+               height: 35px;
+               width: 45px;
+               background-color:white;
+               margin: 0;
+               padding-top:45px;
+               position: absolute;
+               transform: translateX(-75%);
+               border-radius: 0 ;
+               
+          } 
+          .overflowName{
+               width: 65%;
+               padding-left: 15px;
+               text-overflow: ellipsis;
+               overflow: hidden;
+               white-space: nowrap;
+          }
+         .backGrHeart i {
+               font-size: 30px;
+               color:white;
+               margin: 0;
+               padding: 0;
+               justify-content: center;
+               align-items: center;
+               position: relative;
+               left:30px;
+               top: 25px;  
+               transform: rotate(720deg);
+               transform-origin: 15px 15px;
+               animation-fill-mode: backwards, none;
+               animation-delay: 0.25s;
+              
+          }
+         
+     }
+     
+
+}
+
+.centerAllNPH {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
+     width: 100%;
+     padding-left: 5%;
+     
+ 
+}
+.allNamePriceHeart{
+     width: 90%;
+     padding-left: 0;
+     padding-right: 0;
+     background-color: white;
+     border-radius: 20px;
+     margin-bottom: 20px;
+     margin-top: 20px;
+     height: 80px;
+     justify-content: space-between;
+     display: flex;
+     flex-wrap: wrap;
+     box-shadow: -8px 8px 10px  #a0a0a0f2;
+}
+.overflowName{
+     width: 70%;
+     padding-left: 15px;
+     text-overflow: ellipsis;
+     overflow: hidden;
+     white-space: nowrap;
+     transition-duration: 0.5s;
+     transition-timing-function: ease;
+}
+.fullName{
+     padding: 15px 0 0 0;
+     text-overflow: ellipsis;
+     overflow: hidden;
+     white-space: nowrap;
+     color: black;
+}
+.underFullName{
+     color:gray;
+     padding-top: 10px;
+     text-overflow: ellipsis;
+     overflow: hidden;
+     white-space: nowrap;
+}
+.overPrice{
+     justify-content: flex-end;
+     display: inline;
+}
+.price{
+     height: 35px;
+     width: 80px;
+     background-color: white;
+     margin: 0;
+     padding-top:45px;
+     position: absolute;
+     border-radius: 0 20px 20px 0;
+     transition-duration: 0.5s;
+     color: black;
+   
+}
+.backGrHeart {
+     height: 80px;
+     width: 80px;
+     border-radius: 0 20px 20px 0;
+     background-color:turquoise;
+     opacity: 100%;
+     animation-name : visibilityNOWHEART ;
+     animation-duration: 5s;
+     @keyframes visibilityNOWHEART {
+          from { 
+               visibility: hidden;
+               opacity: 0%;
+          }
+          90% {
+               visibility: hidden;
+               opacity: 10%;
+          }
+          to { 
+               visibility: hidden;
+               opacity: 100%;
+          }
+     }
+}
+.backGrHeart i {
+     font-size: 30px;
+     color:white;
+     margin: 0;
+     padding: 0;
+     justify-content: center;
+     align-items: center;
+     position: relative;
+     left:82px ;
+     top: 25px;
+     transition-duration:0.5s ;
+     transition-timing-function: ease-out; 
+    // transform: rotate(-360deg);
+     transform-origin: 15px 15px;
+     
+}
+
+.MakeUp{
+     background:#e6e6e6 ;
+     border: none;
+    // border: black 2px solid;
+     width: 10%;
+     height: 30px;
+     margin-top: 45px;
+     padding: 0;
+     z-index: 20;
+     display: flex;
+     flex-wrap: wrap; 
+}
+//----------AFFICHAGE PROGRESSIF DES PLATS---------->
+.Karabistouille1 div :nth-of-type(1){
+     opacity: 100%;
+     animation-name : visibilityNOW ;
+     animation-duration: 1.5s;
+     @keyframes visibilityNOW {
+          from { 
+               opacity: 0%;
+          }
+          to {
+               opacity: 100%;
+          }
+     }
+}
+.Karabistouille2 div :nth-of-type(1){
+     opacity: 100%;
+     animation-name : visibilityNOW ;
+     animation-duration: 3s;
+     @keyframes visibilityNOW {
+          from { 
+               opacity: 0%;
+          }
+          to {
+               opacity: 100%;
+          }
+     }
+}
+.Karabistouille3 div :nth-of-type(1){
+     opacity: 100%;
+     animation-name : visibilityNOW ;
+     animation-duration: 5.5s;
+     @keyframes visibilityNOW {
+          from { 
+               opacity: 0%;
+          }
+          to {
+               opacity: 100%;
+          }
+     }
+}
+.Karabistouille4 div :nth-of-type(1){
+     opacity: 100%;
+     animation-name : visibilityNOW ;
+     animation-duration: 7s;
+     @keyframes visibilityNOW {
+          from { 
+               opacity: 0%;
+          }
+          to {
+               opacity: 100%;
+          }
+     }
+}
+  
+//----------RESERVATION----------->
+
+.reservation{     
+     @include zeroLeftRightMargPadd(0,0,0,0);   
+     width: 100%;
+     padding-bottom: 0;
+     margin-bottom: 0;
+     background-color: rgb(230, 230, 230);
+     height: auto;
+     padding-bottom: 45px;
+     justify-content: center;
+     justify-items: center;
+     justify-self: center;   
+}
+.textBold {
+     width:75%; 
+     font-size: 1.7rem;
+     font-weight: bold;
+     font-family: "roboto";
+     text-align: center;
+     padding-top: 40px;
+     padding-bottom: 0px;
+     margin-bottom: 0px;
+     margin-left: auto;
+     margin-right: auto;
+     
+     
+}
+.textNormal {
+     width: 80%;   
+     font-size: 1.1rem;
+     text-align: center;
+     font-family: "roboto";
+     margin-left: auto;
+     margin-right: auto;
+     margin-top: 15px;
+     margin-bottom: 25px;
+     
+}
+.explore{
+     padding: 15px;
+     color: white;
+     display: flex;
+     flex-wrap: wrap;
+     font-size: 1rem;
+     text-align: center;
+     justify-content: center;
+     justify-items: center;
+     margin-left: auto;
+     margin-right: auto;
+     width: 250px;
+     border-radius: 25px;
+     border: none;
+     background: linear-gradient(#FF79DA,#9356DC);
+     box-shadow: 0 8px 10px  #a0a0a0f2;
+     &:hover {
+          padding: 15px;
+          color: white;
+          display: flex;
+          text-decoration: none;
+          flex-wrap: wrap;
+          text-align: center;
+          margin-left: auto;
+          margin-right: auto;
+          font-size: 1rem;
+          border-radius: 30px;
+          border: none;
+          background: linear-gradient(#ffa1e4,#a67add);
+          box-shadow: 0 10px 10px  #888888f2 ;
+     }
+}
+
+//----------FONCTIONNNEMENT----------->
+.fonctionnement{
+     @include zeroLeftRightMargPadd(0,0,0,0);    
+     padding-bottom: 0;
+     margin-bottom: 0;
+     justify-content: center;
+     justify-items: center;
+     justify-self: center;  
+     background-color: white;
+     padding-bottom: 40px;
+}
+.fonctionnement h2{
+     transform: translateX(10%);
+     font-size:1.4rem;
+     font-weight: bold;
+     font-family: "roboto";
+     padding-top: 25px;
+}
+a{
+     text-decoration: none;
+}
+.allButtons {
+     justify-items: center;
+     align-items: center;
+     margin-left: 40px;
+     background-color: white;
+}
+.elementsJoin{
+     background-color: rgb(230, 230, 230);
+     padding-top: 20px;
+     padding-bottom: 20px;
+     margin-top: 5px;
+     margin-bottom: 15px;
+     margin-left: 10px;
+     width:80%;
+     border-radius: 10px;
+     box-shadow: 0 5px 5px  #a0a0a0f2; 
+     &:hover {
+          background-color: rgb(240, 223, 238);
+          padding-top: 20px;
+          padding-bottom: 20px;
+          margin-top: 5px;
+          margin-bottom: 15px;
+          margin-left: 10px;
+          width: 80%;
+          border-radius: 10px;
+          box-shadow: 0 5px 5px  #a0a0a0f2;
+          i {      
+               color: #a67add;
+          } 
+     }
+}
+
+.fonctNumber {
+     position: relative;
+     left: -5px;
+     width: 5px;
+     padding-left: 5px;
+     padding-right: 5px;
+     padding-top: 2px;
+     padding-bottom: 2px;
+     margin-right: 15px;
+     height: 5px;
+     background-color: #9356DC;
+     border-radius: 20px;
+     font-family: "roboto";
+     font-size: 0.6rem;
+     color: white;
+}
+a i {      
+     color: gray;
+}
+.fonctTitle{
+     color: black;
+     font-family: "roboto";
+     font-weight: bold;
+     font-size: 0.8rem;
+     margin-left: 15px;
+}
+//----------RESTAURANTS----------->
+.restaurants{     
+     @include zeroLeftRightMargPadd(0,0,0,0);    
+     padding-bottom: 0;
+     margin-bottom: 0;
+     background-color: rgb(230, 230, 230);   
+}
+.restaurants h2{
+     transform: translateX(10%);
+     font-size:1.4rem;
+     font-weight: bold;
+     font-family: "roboto";
+     padding-top: 45px;
+}
+.AllIMGRestaurants{
+     padding-top: 0px;
+     padding-bottom: 0px;
+     margin-top: 5px;
+     margin-left: 40px;
+     width: 80%;
+     
+}
+.IMGandAllRestaurants{
+     background-color: white;
+     border-radius: 20px;
+     box-shadow: 0px 0px 10px 4px rgba(175, 175, 175, 0.675);
+     margin-bottom: 0px;    
+ }
+.IMGRestaurants{
+     width: 100%;
+     border-radius: 20px 20px 0 0;
+     height: 165px
+ }
+ .textUnderIMG{
+     font-family: "roboto";
+     height: 60px;
+     padding: 0;
+     margin: 0;
+ }
+ .textUnderIMG h3{
+     font-family: "roboto";
+     padding: 0;
+     color: black;
+     margin: 5px 0 5px 15px;
+ }
+ .textUnderIMG div{
+     font-family: "roboto";
+     padding: 0;
+     color: gray;
+     margin: 0 0 5px 15px;
+ }
+ .heart :nth-child(2n) {
+      display: none;
+ }
+ .heart{
+      border: none;
+      background-color:transparent;
+      position: relative;
+      left: 85%;
+      bottom: 45px;
+      font-size: 1.5rem;
+      animation-name : KOEUR ;
+     // transition-duration: 5s;
+     //transition-timing-function: ease;
+     // animation-duration: 5s;
+      &:hover {
+          :nth-child(1) {  
+               display: none;
+          }
+          :nth-child(2) {
+               animation-name: KOEUR;
+               animation-duration: 2s;
+               display: inline-block;
+               background: linear-gradient(#a67add,#ffa1e4);
+               background-clip: text;
+               -webkit-text-fill-color:transparent;
+               -webkit-background-clip: text ;  
+               @keyframes KOEUR {
+                    from { display: inline-block;
+                         background: linear-gradient(#a67add,#ffa1e4);
+                         background-clip: text;
+                         -webkit-text-fill-color:transparent;
+                         -webkit-background-clip: text ;
+                         opacity: 0%; 
+                     }
+               }
+                    to {
+                    display: inline-block;
+               background: linear-gradient(#a67add,#ffa1e4);
+               background-clip: text;
+               -webkit-text-fill-color:transparent;
+               -webkit-background-clip: text ;  
+               opacity: 100%;
+               }
+              
+               
+               //transition-duration: 5s;
+               //transition-timing-function: ease;
+               //animation-duration: 5s;
+                
+                                                                   
+          }
+     }
+}
+ .newText{
+     position: relative;
+     left: 60%;
+     display: inline;
+     bottom: 220px;
+     background-color: turquoise;
+     color: green;
+     padding: 10px;
+     margin-right: 15px;
+     font-family: "roboto";
+ }
+ //----------FOOTER----------->
+ footer {
+      background-color: black;
+      padding-bottom: 0;
+      margin-bottom: 0;
+      width: 100%;
+ }
+ .allFooter{
+     transform: translateX(10%);
+     padding-bottom: 40px;
+     
+ }
+ h4{
+     padding-top: 20px;
+     margin-top: 0;
+     color: white;
+     font-size: 1.2rem;
+     font-family: "shrikhand";
+     
+ }
+ footer div{     
+     padding-top: 2px;
+     padding-bottom: 2px;
+     color: white;
+     font-size: 1rem;
+     font-family: "roboto";
+ }
+ .alignFooterText{
+      display: flex;
+     flex-wrap: wrap;
+}
+.alignFooterText i {
+     padding-right: 10px;
+}
+.noDeco a {
+     text-decoration: none;
+     color: white;    
+}
+.appIcon {display: none;}
+}
+
+@media all and (min-width:801px) and (max-width:1225px) {
+     body{
+          @include zeroLeftRightMargPadd(0,0,0,0); 
+          margin-bottom: 0;
+          background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(230,230,230,1) 10%);
+          padding-bottom: 0;
+     }
+     html {
+          font-size: 100%;
+          @include zeroLeftRightMargPadd(0,0,0,0);
+          margin-bottom: 0;
+          padding-bottom: 0;    
+     }
+     img {
+          object-fit: cover;
+      }
+     
+//----------LOADER---------->
+.TransparenSite{
+     position: absolute;
+     animation-duration: 5s;
+     animation-iteration-count:1;
+     background: linear-gradient(white,#FF79DA,#9356DC);
+     z-index: -30;
+     width:auto;
+     height: auto;
+     margin: auto;
+     padding-top: 500px;
+     color: gray;
+     font-size: 0rem;
+     justify-content: center;
+     align-content: center;
+     vertical-align: auto;
+     animation-name : LoADeur ;
+     z-index: 30;
+     }
+ @keyframes LoADeur {
+          from {  background: linear-gradient(white,#FF79DA);
+               z-index: 30;
+               width: 100%;
+               height: 2150px; 
+               opacity: 100%;
+               animation-delay: 0.2s;
+          animation-duration: 0.2s;
+          font-size: 5rem;
+          justify-content: center;
+          align-content: center;
+          text-align: center;
+          vertical-align: auto
+          }
+          25% {  background: linear-gradient( white,#FF79DA);
+                    z-index: 30;
+                    width: 100%;
+                    height: 2150px; 
+                    opacity: 100%;
+                    animation-delay: 0.2s;
+     animation-duration: 0.2s;
+     font-size: 6rem;
+     justify-content: center;
+     align-content: center;
+     text-align: center;
+     vertical-align: auto}
+          50%  { background: linear-gradient(white,#FF79DA);
+               z-index: 30;
+               width: 100%;
+               height: 2150px;
+               opacity: 70%;
+               animation-delay: 0.2s;
+     animation-duration: 0.2s; 
+     font-size: 4rem;
+     justify-content: center;
+     align-content: center;
+     text-align: center;
+     vertical-align: auto} 
+          70%  { background: linear-gradient(white,#FF79DA );
+                    z-index: 30;
+                    width: 100%;
+                    height: 2150px;
+                    opacity: 0%;
+                    animation-delay: 0.2s;
+                    animation-duration: 0.2s;
+                    font-size: 5rem;
+                    justify-content: center;
+                    align-content: center;
+                    text-align: center; 
+                    vertical-align: auto} 
+          to   { background: linear-gradient(white);
+               z-index: 30;
+               width: 100%;
+               height: 2150px;
+               opacity: 0%;
+               animation-delay: 0.2s;
+               animation-duration: 0.2s;
+               display: none ;
+               visibility: hidden; 
+               font-size: 5rem;
+               justify-content: center;
+               align-content: center;
+               text-align: center;
+          vertical-align: auto}
+        }
+     //----------HEADER----------->
+     
+     header {
+          @include zeroLeftRightMargPadd(0,0,0,0);    
+          justify-content: center;
+          padding-bottom: 0;
+          margin-bottom: 0;
+          
+     }
+     #headTitle {
+          justify-content: center;
+     @include zeroLeftRightMargPadd(0,0,0,0);   
+     margin-bottom: 0;
+     width: 100%;
+     background-color: white;
+     padding-top: 50;  
+          
+     }
+     h1 {
+          margin: 0;
+          font-size: 2.2rem;
+          font-family: "shrikhand";
+          justify-content: center;
+          text-align: center;
+     }
+    
+     #infoMap {
+          @include zeroLeftRightMargPadd(0,0,0,0);    
+          padding-bottom: 0;
+          margin-bottom: 0;
+          padding-top: 25px;
+          margin-top: 0;
+          border-top: #a0a0a0f2 solid 3px;
+          width: 100%;
+          background-color: rgb(218, 218, 218);
+     }
+     .TransY {
+          justify-content: center;
+          text-align: center;
+          transform: translateY(-50%);
+          padding-left: 55px;
+     }
+     .fas fa-map-marker-alt {
+          font-family: "Font Awesome 5 Free";
+     }
+     input {
+          font-size: 1rem;
+          font-family: "roboto";
+          margin: 2px;
+          border: none;
+          font-weight: bold;
+          background-color: rgb(218, 218, 218);
+          padding-left: 10px;
+     }
+     //----------Header-Page---------->
+#accueilReturn a i{
+     position: absolute;
+     top:15px;
+     font-size: 2em;
+     color: black;
+     left:2%
+}
+.imgPlanette {
+     width: 100%;
+     margin: 0;
+     padding: 0;
+}
+//----------Header-(((Page)))---------->
+#accueilReturn a i{
+     position: absolute;
+     top:15px;
+     font-size: 2em;
+     color: black;
+     left:2%
+}
+.imgPlanette {
+     z-index: -10;
+     width: 100%;
+     height: 295px;
+     margin: 0;
+     padding: 0;
+}
+//----------Nom du restaurant-(((Page)))---------->
+
+.restName div{
+     width: 100%;
+     position:absolute;
+     top:275px;
+     z-index: 0;
+     font-size: 2.2rem;
+     font-family: "shrikhand";
+     justify-content: left;
+     padding: 25px 5px 5px 20px;
+     border-radius: 30px 30px 0 0;
+     background-color:  rgb(230, 230, 230);
+}
+.restName a i {
+     z-index: 10;
+}
+//----------Titres des sections (((Page)))---------->
+
+.entrees {
+     background-color: rgb(230, 230, 230);
+     padding-top: 0px;
+     font-size: 1.2rem;
+     font-family: "roboto";
+     
+}
+.flexSection{
+     display: flex;
+     flex-wrap: wrap;
+     
+     
+}.Karabistouille1{
+     display: flex;
+     flex-wrap: wrap;
+     width: 50%;
+}
+.Karabistouille2{
+     display: flex;
+     flex-wrap: wrap;
+     width: 50%;
+}
+.Karabistouille3{
+     display: flex;
+     flex-wrap: wrap;
+     width: 50%;
+}
+.Karabistouille4{
+     display: flex;
+     flex-wrap: wrap;
+     width: 50%;
+}
+.titleFood{
+     padding-bottom: 10px;
+     padding-left:20px ; 
+     
+}
+.bordGreen {
+     border-bottom: 3px turquoise solid;
+     display: inline-flex;
+     flex-wrap: wrap;
+     padding-bottom : 5px;
+     padding-right: 0;
+     border-left: 0;
+}
+.restOfText{
+     border-left: 0;
+     padding-right: 0;
+     display: inline-flex;
+     flex-wrap: wrap;
+     position: relative;
+     right: 4px;
+
+}
+//----------Noms des plats et prix (((Page)))---------->
+.animationDeOUfGedin {
+     text-decoration: none;
+     display: flex;
+     flex-wrap: wrap;
+     width: 100%;
+     justify-content: space-between;
+     &:hover {
+          .price {      
+               display: flex;
+               height: 35px;
+               width: 45px;
+               background-color:white;
+               margin: 0;
+               padding-top:45px;
+               position: absolute;
+               transform: translateX(-75%);
+               border-radius: 0 ;
+               
+          } 
+          .overflowName{
+               width: 65%;
+               padding-left: 15px;
+               text-overflow: ellipsis;
+               overflow: hidden;
+               white-space: nowrap;
+          }
+         .backGrHeart i {
+               font-size: 30px;
+               color:white;
+               margin: 0;
+               padding: 0;
+               justify-content: center;
+               align-items: center;
+               position: relative;
+               left:30px;
+               top: 25px;  
+               transform: rotate(720deg);
+               transform-origin: 15px 15px;
+               animation-fill-mode: backwards, none;
+               animation-delay: 0.25s;
+              
+          }
+         
+     }
+     
+
+}
+
+.centerAllNPH {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
+     width: 100%;
+     padding-left: 5%;
+     
+ 
+}
+.allNamePriceHeart{
+     width: 90%;
+     padding-left: 0;
+     padding-right: 0;
+     background-color: white;
+     border-radius: 20px;
+     margin-bottom: 20px;
+     margin-top: 20px;
+     height: 80px;
+     justify-content: space-between;
+     display: flex;
+     flex-wrap: wrap;
+     box-shadow: -8px 8px 10px  #a0a0a0f2;
+}
+.overflowName{
+     width: 70%;
+     padding-left: 15px;
+     text-overflow: ellipsis;
+     overflow: hidden;
+     white-space: nowrap;
+     transition-duration: 0.5s;
+     transition-timing-function: ease;
+}
+.fullName{
+     padding: 15px 0 0 0;
+     text-overflow: ellipsis;
+     overflow: hidden;
+     white-space: nowrap;
+     color: black;
+}
+.underFullName{
+     color:gray;
+     padding-top: 10px;
+     text-overflow: ellipsis;
+     overflow: hidden;
+     white-space: nowrap;
+}
+.overPrice{
+     justify-content: flex-end;
+     display: inline;
+}
+.price{
+     height: 35px;
+     width: 80px;
+     background-color: white;
+     margin: 0;
+     padding-top:45px;
+     position: absolute;
+     border-radius: 0 20px 20px 0;
+     transition-duration: 0.5s;
+     color: black;
+   
+}
+.backGrHeart {
+     height: 80px;
+     width: 80px;
+     border-radius: 0 20px 20px 0;
+     background-color:turquoise;
+     opacity: 100%;
+     animation-name : visibilityNOWHEART ;
+     animation-duration: 5s;
+     @keyframes visibilityNOWHEART {
+          from { 
+               visibility: hidden;
+               opacity: 0%;
+          }
+          90% {
+               visibility: hidden;
+               opacity: 10%;
+          }
+          to { 
+               visibility: hidden;
+               opacity: 100%;
+          }
+     }
+}
+.backGrHeart i {
+     font-size: 30px;
+     color:white;
+     margin: 0;
+     padding: 0;
+     justify-content: center;
+     align-items: center;
+     position: relative;
+     left:82px ;
+     top: 25px;
+     transition-duration:0.5s ;
+     transition-timing-function: ease-out; 
+    // transform: rotate(-360deg);
+     transform-origin: 15px 15px;
+     
+}
+
+.MakeUp{
+     background:#e6e6e6 ;
+     border: none;
+    // border: black 2px solid;
+     width: 10%;
+     height: 30px;
+     margin-top: 45px;
+     padding: 0;
+     z-index: 20;
+     display: flex;
+     flex-wrap: wrap; 
+}
+//----------AFFICHAGE PROGRESSIF DES PLATS---------->
+.Karabistouille1 div :nth-of-type(1){
+     opacity: 100%;
+     animation-name : visibilityNOW ;
+     animation-duration: 1.5s;
+     @keyframes visibilityNOW {
+          from { 
+               opacity: 0%;
+          }
+          to {
+               opacity: 100%;
+          }
+     }
+}
+.Karabistouille2 div :nth-of-type(1){
+     opacity: 100%;
+     animation-name : visibilityNOW ;
+     animation-duration: 3s;
+     @keyframes visibilityNOW {
+          from { 
+               opacity: 0%;
+          }
+          to {
+               opacity: 100%;
+          }
+     }
+}
+.Karabistouille3 div :nth-of-type(1){
+     opacity: 100%;
+     animation-name : visibilityNOW ;
+     animation-duration: 5.5s;
+     @keyframes visibilityNOW {
+          from { 
+               opacity: 0%;
+          }
+          to {
+               opacity: 100%;
+          }
+     }
+}
+.Karabistouille4 div :nth-of-type(1){
+     opacity: 100%;
+     animation-name : visibilityNOW ;
+     animation-duration: 7s;
+     @keyframes visibilityNOW {
+          from { 
+               opacity: 0%;
+          }
+          to {
+               opacity: 100%;
+          }
+     }
+}
+  
+
+     //----------RESERVATION----------->
+     
+     .reservation{     
+          @include zeroLeftRightMargPadd(0,0,0,0);   
+          width: 100%;
+          padding-bottom: 0;
+          margin-bottom: 0;
+          background-color: rgb(230, 230, 230);
+          height: auto;
+          padding-bottom: 45px;
+          justify-content: center;
+          justify-items: center;
+          justify-self: center;   
+     }
+     .textBold {
+          width:75%; 
+          font-size: 1.7rem;
+          font-weight: bold;
+          font-family: "roboto";
+          text-align: center;
+          padding-top: 40px;
+          padding-bottom: 0px;
+          margin-bottom: 0px;
+          margin-left: auto;
+          margin-right: auto;
+          
+     }
+     .textNormal {
+          width: 80%;   
+          font-size: 1.1rem;
+          text-align: center;
+          font-family: "roboto";
+          margin-left: auto;
+          margin-right: auto;
+          margin-top: 15px;
+          margin-bottom: 25px;
+         
+     }
+     .explore{
+          padding: 15px;
+          color: white;
+          display: flex;
+          flex-wrap: wrap;
+          font-size: 1rem;
+          text-align: center;
+          justify-content: center;
+          justify-items: center;
+          margin-left: auto;
+          margin-right: auto;
+          width: 250px;
+          border-radius: 25px;
+          border: none;
+          background: linear-gradient(#FF79DA,#9356DC);
+          box-shadow: 0 8px 10px  #a0a0a0f2;
+          &:hover {
+               padding: 15px;
+               color: white;
+               display: flex;
+               text-decoration: none;
+               flex-wrap: wrap;
+               text-align: center;
+               margin-left: auto;
+               margin-right: auto;
+               font-size: 1rem;
+               border-radius: 30px;
+               border: none;
+               background: linear-gradient(#ffa1e4,#a67add);
+               box-shadow: 0 10px 10px  #888888f2 ;
+          }
+     }
+     
+     //----------FONCTIONNNEMENT----------->
+
+     .fonctionnement{
+          @include zeroLeftRightMargPadd(0,0,0,0);    
+          padding-bottom: 0;
+          margin-bottom: 0;
+          justify-content: center;
+          justify-items: center;
+          justify-self: center; 
+          background-color: white; 
+     }
+     .fonctionnement h2{
+          transform: translateX(5%);
+          font-size:1.4rem;
+          padding-top: 25px;
+          font-weight: bold;
+          font-family: "roboto";
+     }
+     a{
+          text-decoration: none;
+     }
+     .allButtons {
+          justify-items: center;
+          align-items: center;
+          margin-left: 15px;
+          margin-right: 15px;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-around;
+     }
+     .elementsJoin{
+          background-color: rgb(230, 230, 230);
+          padding-top: 20px;
+          padding-bottom: 20px;
+          margin-top: 5px;
+          margin-bottom: 15px;
+          margin-left: 5px;
+          width:350px;
+          border-radius: 10px;
+          box-shadow: 0 5px 5px  #a0a0a0f2;
+          &:hover {
+               background-color: rgb(240, 223, 238);
+               padding-top: 20px;
+               padding-bottom: 20px;
+               margin-top: 5px;
+               margin-bottom: 15px;
+               margin-left: 5px;
+               width: 350px;
+               border-radius: 10px;
+               box-shadow: 0 5px 5px  #a0a0a0f2;
+               i {      
+                    color: #a67add;
+               } 
+          }
+     }
+     
+     .fonctNumber {
+          position: relative;
+          left: -5px;
+          width: 5px;
+          padding-left: 5px;
+          padding-right: 5px;
+          padding-top: 2px;
+          padding-bottom: 2px;
+          margin-right: 5px;
+          height: 5px;
+          background-color: #9356DC;
+          border-radius: 20px;
+          font-family: "roboto";
+          font-size: 0.6rem;
+          color: white;
+     }
+     a i {      
+          color: gray;
+     }
+     .fonctTitle{
+          color: black;
+          font-family: "roboto";
+          font-weight: bold;
+          font-size: 0.8rem;
+          margin-left: 10px;
+     }
+
+     //----------RESTAURANTS----------->
+
+     .restaurants{     
+          @include zeroLeftRightMargPadd(0,0,0,0);    
+          padding-bottom: 0;
+          margin-bottom: 0;
+          background-color: rgb(230, 230, 230);   
+     }
+     .restaurants h2{
+          transform: translateX(5%);
+          font-size:1.4rem;
+          font-weight: bold;
+          font-family: "roboto";
+          padding-top: 45px;
+     }
+     .AlignIMG{
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-around;
+     }
+     .AllIMGRestaurants{
+          padding-top: 0px;
+          padding-bottom: 0px;
+          margin-top: 5px;
+          margin-left: 40px;
+          width: 45%;
+          
+     }
+     .IMGandAllRestaurants{
+          background-color: white;
+          border-radius: 20px;
+          box-shadow: 0px 0px 10px 4px rgba(175, 175, 175, 0.675);
+          margin-bottom: 0px;    
+      }
+     .IMGRestaurants{
+          width: 100%;
+          border-radius: 20px 20px 0 0;
+          height: 165px
+      }
+      .textUnderIMG{
+          font-family: "roboto";
+          height: 60px;
+          padding: 0;
+          margin: 0;
+      }
+      .textUnderIMG h3{
+          font-family: "roboto";
+          padding: 0;
+          color: black;
+          margin: 5px 0 5px 15px;
+      }
+      .textUnderIMG div{
+          font-family: "roboto";
+          padding: 0;
+          color: gray;
+          margin: 0 0 5px 15px;
+      }
+      .heart :nth-child(2n) {
+          display: none;
+     }
+     .heart{
+          border: none;
+          background-color:transparent;
+          position: relative;
+          left: 85%;
+          bottom: 45px;
+          font-size: 1.5rem;
+          animation-name : KOEUR ;
+         // transition-duration: 5s;
+         //transition-timing-function: ease;
+         // animation-duration: 5s;
+          &:hover {
+              :nth-child(1) {  
+                   display: none;
+              }
+              :nth-child(2) {
+                   animation-name: KOEUR;
+                   animation-duration: 2s;
+                   display: inline-block;
+                   background: linear-gradient(#a67add,#ffa1e4);
+                   background-clip: text;
+                   -webkit-text-fill-color:transparent;
+                   -webkit-background-clip: text ;  
+                   @keyframes KOEUR {
+                        from { display: inline-block;
+                             background: linear-gradient(#a67add,#ffa1e4);
+                             background-clip: text;
+                             -webkit-text-fill-color:transparent;
+                             -webkit-background-clip: text ;
+                             opacity: 0%; 
+                         }
+                   }
+                        to {
+                        display: inline-block;
+                   background: linear-gradient(#a67add,#ffa1e4);
+                   background-clip: text;
+                   -webkit-text-fill-color:transparent;
+                   -webkit-background-clip: text ;  
+                   opacity: 100%;
+                   }
+                  
+                   
+                   //transition-duration: 5s;
+                   //transition-timing-function: ease;
+                   //animation-duration: 5s;
+                    
+                                                                       
+              }
+         }
+    }
+      .newText{
+          position: relative;
+          left: 50%;
+          display: inline;
+          bottom: 220px;
+          background-color: turquoise;
+          color: green;
+          padding: 10px;
+          margin-right: 15px;
+          font-family: "roboto";
+      }
+
+      //----------FOOTER----------->
+      
+      footer {
+           background-color: black;
+           padding-bottom: 0;
+           margin-bottom: 0;
+          
+      }
+      .allFooter{
+          transform: translateX(10%);
+          padding-bottom: 40px;
+          height: 200px;
+          
+      }
+      h4{
+          padding-top: 20px;
+          margin-top: 0;
+          color: white;
+          font-size: 1.2rem;
+          font-family: "shrikhand";
+          
+      }
+      footer div{     
+          padding-top: 2px;
+          padding-bottom: 2px;
+          color: white;
+          font-size: 1rem;
+          font-family: "roboto";
+          padding-bottom: 0;
+           margin-bottom: 0;
+      }
+      .alignFooterText{
+           display: flex;
+          flex-wrap: wrap;
+     }
+     .alignFooterText i {
+          padding-right: 10px;
+     }
+     .noDeco a {
+          text-decoration: none;
+          color: white;    
+     }
+}
+@media all and (min-width:1226px) {
+     body{
+          @include zeroLeftRightMargPadd(0,0,0,0); 
+          margin-bottom: 0;
+          background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(230,230,230,1) 10%);
+          padding-bottom: 0;
+     }
+     html {
+          font-size: 100%;
+          @include zeroLeftRightMargPadd(0,0,0,0);
+          margin-bottom: 0;
+          padding-bottom: 0;    
+     }
+     img {
+          object-fit: cover;
+      }
+     
+//----------LOADER---------->
+.TransparenSite{
+     position: absolute;
+     animation-duration: 5s;
+     animation-iteration-count:1;
+     background: linear-gradient(white,#FF79DA,#9356DC);
+     z-index: -30;
+     width:auto;
+     height: auto;
+     margin: auto;
+     padding-top: 500px;
+     color: gray;
+     font-size: 0rem;
+     justify-content: center;
+     align-content: center;
+     vertical-align: auto;
+     animation-name : LoADeur ;
+     z-index: 30;
+     }
+ @keyframes LoADeur {
+          from {  background: linear-gradient(white,#FF79DA);
+               z-index: 30;
+               width: 100%;
+               height: 2150px; 
+               opacity: 100%;
+               animation-delay: 0.2s;
+          animation-duration: 0.2s;
+          font-size: 5rem;
+          justify-content: center;
+          align-content: center;
+          text-align: center;
+          vertical-align: auto
+          }
+          25% {  background: linear-gradient( white,#FF79DA);
+                    z-index: 30;
+                    width: 100%;
+                    height: 2150px; 
+                    opacity: 100%;
+                    animation-delay: 0.2s;
+     animation-duration: 0.2s;
+     font-size: 6rem;
+     justify-content: center;
+     align-content: center;
+     text-align: center;
+     vertical-align: auto}
+          50%  { background: linear-gradient(white,#FF79DA);
+               z-index: 30;
+               width: 100%;
+               height: 2150px;
+               opacity: 70%;
+               animation-delay: 0.2s;
+     animation-duration: 0.2s; 
+     font-size: 4rem;
+     justify-content: center;
+     align-content: center;
+     text-align: center;
+     vertical-align: auto} 
+          70%  { background: linear-gradient(white,#FF79DA );
+                    z-index: 30;
+                    width: 100%;
+                    height: 2150px;
+                    opacity: 0%;
+                    animation-delay: 0.2s;
+                    animation-duration: 0.2s;
+                    font-size: 5rem;
+                    justify-content: center;
+                    align-content: center;
+                    text-align: center; 
+                    vertical-align: auto} 
+          to   { background: linear-gradient(white);
+               z-index: 30;
+               width: 100%;
+               height: 2150px;
+               opacity: 0%;
+               animation-delay: 0.2s;
+               animation-duration: 0.2s;
+               display: none ;
+               visibility: hidden; 
+               font-size: 5rem;
+               justify-content: center;
+               align-content: center;
+               text-align: center;
+          vertical-align: auto}
+        }
+     //----------HEADER----------->
+     
+     header {
+          @include zeroLeftRightMargPadd(0,0,0,0);    
+          justify-content: center;
+          padding-bottom: 0;
+          margin-bottom: 0;
+          
+     }
+     #headTitle {
+          justify-content: center;
+     @include zeroLeftRightMargPadd(0,0,0,0);   
+     margin-bottom: 0;
+     width: 100%;
+     background-color: white;
+     padding-top: 50;  
+          
+     }
+     h1 {
+          margin: 0;
+          font-size: 2.2rem;
+          font-family: "shrikhand";
+          justify-content: center;
+          text-align: center;
+     }
+    
+     #infoMap {
+          @include zeroLeftRightMargPadd(0,0,0,0);    
+          padding-bottom: 0;
+          margin-bottom: 0;
+          padding-top: 25px;
+          margin-top: 0;
+          border-top: #a0a0a0f2 solid 3px;
+          width: 100%;
+          background-color: rgb(218, 218, 218);
+     }
+     .TransY {
+          justify-content: center;
+          text-align: center;
+          transform: translateY(-50%);
+          padding-left: 55px;
+     }
+     .fas fa-map-marker-alt {
+          font-family: "Font Awesome 5 Free";
+     }
+     input {
+          font-size: 1rem;
+          font-family: "roboto";
+          margin: 2px;
+          border: none;
+          font-weight: bold;
+          background-color: rgb(218, 218, 218);
+          padding-left: 10px;
+     }
+     //----------Header-Page---------->
+#accueilReturn a i{
+     position: absolute;
+     top:15px;
+     font-size: 2em;
+     color: black;
+     left:2%
+}
+.imgPlanette {
+     width: 100%;
+     margin: 0;
+     padding: 0;
+}
+//----------Header-(((Page)))---------->
+#accueilReturn a i{
+     position: absolute;
+     top:15px;
+     font-size: 2em;
+     color: black;
+     left:2%
+}
+.imgPlanette {
+     z-index: -10;
+     width: 100%;
+     height: 295px;
+     margin: 0;
+     padding: 0;
+}
+//----------Nom du restaurant-(((Page)))---------->
+
+.restName div{
+     width: 100%;
+     position:absolute;
+     top:275px;
+     z-index: 0;
+     font-size: 2.2rem;
+     font-family: "shrikhand";
+     justify-content: left;
+     padding: 25px 5px 5px 20px;
+     border-radius: 30px 30px 0 0;
+     background-color:  rgb(230, 230, 230);
+}
+.restName a i {
+     z-index: 10;
+}
+//----------Titres des sections (((Page)))---------->
+
+.entrees {
+     background-color: rgb(230, 230, 230);
+     padding-top: 0px;
+     font-size: 1.2rem;
+     font-family: "roboto";
+     
+}
+.flexSection{
+     display: flex;
+     flex-wrap: wrap;
+     
+     
+}
+.Karabistouille1{
+     display: flex;
+     flex-wrap: wrap;
+     width: 50%;
+}
+.Karabistouille2{
+     display: flex;
+     flex-wrap: wrap;
+     width: 50%;
+}
+.Karabistouille3{
+     display: flex;
+     flex-wrap: wrap;
+     width: 50%;
+}
+.Karabistouille4{
+     display: flex;
+     flex-wrap: wrap;
+     width: 50%;
+}
+.titleFood{
+     padding-bottom: 10px;
+     padding-left:20px ; 
+     
+}
+.bordGreen {
+     border-bottom: 3px turquoise solid;
+     display: inline-flex;
+     flex-wrap: wrap;
+     padding-bottom : 5px;
+     padding-right: 0;
+     border-left: 0;
+}
+.restOfText{
+     border-left: 0;
+     padding-right: 0;
+     display: inline-flex;
+     flex-wrap: wrap;
+     position: relative;
+     right: 4px;
+
+}
+//----------Noms des plats et prix (((Page)))---------->
+.animationDeOUfGedin {
+     text-decoration: none;
+     display: flex;
+     flex-wrap: wrap;
+     width: 100%;
+     justify-content: space-between;
+     &:hover {
+          .price {      
+               display: flex;
+               height: 35px;
+               width: 45px;
+               background-color:white;
+               margin: 0;
+               padding-top:45px;
+               position: absolute;
+               transform: translateX(-75%);
+               border-radius: 0 ;
+               
+          } 
+          .overflowName{
+               width: 65%;
+               padding-left: 15px;
+               text-overflow: ellipsis;
+               overflow: hidden;
+               white-space: nowrap;
+          }
+         .backGrHeart i {
+               font-size: 30px;
+               color:white;
+               margin: 0;
+               padding: 0;
+               justify-content: center;
+               align-items: center;
+               position: relative;
+               left:30px;
+               top: 25px;  
+               transform: rotate(720deg);
+               transform-origin: 15px 15px;
+               animation-fill-mode: backwards, none;
+               animation-delay: 0.25s;
+              
+          }
+         
+     }
+     
+
+}
+
+.centerAllNPH {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
+     width: 100%;
+     padding-left: 5%;
+     
+ 
+}
+.allNamePriceHeart{
+     width: 90%;
+     padding-left: 0;
+     padding-right: 0;
+     background-color: white;
+     border-radius: 20px;
+     margin-bottom: 20px;
+     margin-top: 20px;
+     height: 80px;
+     justify-content: space-between;
+     display: flex;
+     flex-wrap: wrap;
+     box-shadow: -8px 8px 10px  #a0a0a0f2;
+}
+.overflowName{
+     width: 70%;
+     padding-left: 15px;
+     text-overflow: ellipsis;
+     overflow: hidden;
+     white-space: nowrap;
+     transition-duration: 0.5s;
+     transition-timing-function: ease;
+}
+.fullName{
+     padding: 15px 0 0 0;
+     text-overflow: ellipsis;
+     overflow: hidden;
+     white-space: nowrap;
+     color: black;
+}
+.underFullName{
+     color:gray;
+     padding-top: 10px;
+     text-overflow: ellipsis;
+     overflow: hidden;
+     white-space: nowrap;
+}
+.overPrice{
+     justify-content: flex-end;
+     display: inline;
+}
+.price{
+     height: 35px;
+     width: 80px;
+     background-color: white;
+     margin: 0;
+     padding-top:45px;
+     position: absolute;
+     border-radius: 0 20px 20px 0;
+     transition-duration: 0.5s;
+     color: black;
+   
+}
+.backGrHeart {
+     height: 80px;
+     width: 80px;
+     border-radius: 0 20px 20px 0;
+     background-color:turquoise;
+     opacity: 100%;
+     animation-name : visibilityNOWHEART ;
+     animation-duration: 5s;
+     @keyframes visibilityNOWHEART {
+          from { 
+               visibility: hidden;
+               opacity: 0%;
+          }
+          90% {
+               visibility: hidden;
+               opacity: 10%;
+          }
+          to { 
+               visibility: hidden;
+               opacity: 100%;
+          }
+     }
+}
+.backGrHeart i {
+     font-size: 30px;
+     color:white;
+     margin: 0;
+     padding: 0;
+     justify-content: center;
+     align-items: center;
+     position: relative;
+     left:82px ;
+     top: 25px;
+     transition-duration:0.5s ;
+     transition-timing-function: ease-out; 
+    // transform: rotate(-360deg);
+     transform-origin: 15px 15px;
+     
+}
+
+.MakeUp{
+     background:#e6e6e6 ;
+     border: none;
+    // border: black 2px solid;
+     width: 10%;
+     height: 30px;
+     margin-top: 45px;
+     padding: 0;
+     z-index: 20;
+     display: flex;
+     flex-wrap: wrap; 
+}
+//----------AFFICHAGE PROGRESSIF DES PLATS---------->
+.Karabistouille1 div :nth-of-type(1){
+     opacity: 100%;
+     animation-name : visibilityNOW ;
+     animation-duration: 1.5s;
+     @keyframes visibilityNOW {
+          from { 
+               opacity: 0%;
+          }
+          to {
+               opacity: 100%;
+          }
+     }
+}
+.Karabistouille2 div :nth-of-type(1){
+     opacity: 100%;
+     animation-name : visibilityNOW ;
+     animation-duration: 3s;
+     @keyframes visibilityNOW {
+          from { 
+               opacity: 0%;
+          }
+          to {
+               opacity: 100%;
+          }
+     }
+}
+.Karabistouille3 div :nth-of-type(1){
+     opacity: 100%;
+     animation-name : visibilityNOW ;
+     animation-duration: 5.5s;
+     @keyframes visibilityNOW {
+          from { 
+               opacity: 0%;
+          }
+          to {
+               opacity: 100%;
+          }
+     }
+}
+.Karabistouille4 div :nth-of-type(1){
+     opacity: 100%;
+     animation-name : visibilityNOW ;
+     animation-duration: 7s;
+     @keyframes visibilityNOW {
+          from { 
+               opacity: 0%;
+          }
+          to {
+               opacity: 100%;
+          }
+     }
+}
+
+     //----------RESERVATION----------->
+     
+     .reservation{     
+          @include zeroLeftRightMargPadd(0,0,0,0);   
+          width: 100%;
+          padding-bottom: 0;
+          margin-bottom: 0;
+          background-color: rgb(230, 230, 230);
+          height: auto;
+          padding-bottom: 45px;
+          justify-content: center;
+          justify-items: center;
+          justify-self: center;   
+     }
+     .textBold {
+          width:75%; 
+          font-size: 1.7rem;
+          font-weight: bold;
+          font-family: "roboto";
+          text-align: center;
+          padding-top: 40px;
+          padding-bottom: 0px;
+          margin-bottom: 0px;
+          margin-left: auto;
+          margin-right: auto;
+          
+     }
+     .textNormal {
+          width: 80%;   
+          font-size: 1.1rem;
+          text-align: center;
+          font-family: "roboto";
+          margin-left: auto;
+          margin-right: auto;
+          margin-top: 15px;
+          margin-bottom: 25px;
+         
+     }
+     .explore{
+          padding: 15px;
+          color: white;
+          display: flex;
+          flex-wrap: wrap;
+          font-size: 1rem;
+          text-align: center;
+          justify-content: center;
+          justify-items: center;
+          margin-left: auto;
+          margin-right: auto;
+          width: 250px;
+          border-radius: 25px;
+          border: none;
+          background: linear-gradient(#FF79DA,#9356DC);
+          box-shadow: 0 8px 10px  #a0a0a0f2;
+          &:hover {
+               padding: 15px;
+               color: white;
+               display: flex;
+               text-decoration: none;
+               flex-wrap: wrap;
+               text-align: center;
+               margin-left: auto;
+               margin-right: auto;
+               font-size: 1rem;
+               border-radius: 30px;
+               border: none;
+               background: linear-gradient(#ffa1e4,#a67add);
+               box-shadow: 0 10px 10px  #888888f2 ;
+          }
+     }
+     
+     //----------FONCTIONNNEMENT----------->
+
+     .fonctionnement{
+          @include zeroLeftRightMargPadd(0,0,0,0);    
+          padding-bottom: 0;
+          margin-bottom: 0;
+          justify-content: center;
+          justify-items: center;
+          justify-self: center; 
+          background-color: white; 
+     }
+     .fonctionnement h2{
+          transform: translateX(5%);
+          font-size:1.4rem;
+          padding-top: 25px;
+          font-weight: bold;
+          font-family: "roboto";
+     }
+     a{
+          text-decoration: none;
+     }
+     .allButtons {
+          justify-items: center;
+          align-items: center;
+          margin-left: 15px;
+          margin-right: 15px;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-around;
+     }
+     .elementsJoin{
+          background-color: rgb(230, 230, 230);
+          padding-top: 20px;
+          padding-bottom: 20px;
+          margin-top: 5px;
+          margin-bottom: 15px;
+          margin-left: 5px;
+          width:350px;
+          border-radius: 10px;
+          box-shadow: 0 5px 5px  #a0a0a0f2;
+          &:hover {
+               background-color: rgb(240, 223, 238);
+               padding-top: 20px;
+               padding-bottom: 20px;
+               margin-top: 5px;
+               margin-bottom: 15px;
+               margin-left: 5px;
+               width: 350px;
+               border-radius: 10px;
+               box-shadow: 0 5px 5px  #a0a0a0f2;
+               i {      
+                    color: #a67add;
+               } 
+          }
+     }
+     
+     .fonctNumber {
+          position: relative;
+          left: -5px;
+          width: 5px;
+          padding-left: 5px;
+          padding-right: 5px;
+          padding-top: 2px;
+          padding-bottom: 2px;
+          margin-right: 5px;
+          height: 5px;
+          background-color: #9356DC;
+          border-radius: 20px;
+          font-family: "roboto";
+          font-size: 0.6rem;
+          color: white;
+     }
+     a i {      
+          color: gray;
+     }
+     .fonctTitle{
+          color: black;
+          font-family: "roboto";
+          font-weight: bold;
+          font-size: 0.8rem;
+          margin-left: 10px;
+     }
+
+     //----------RESTAURANTS----------->
+
+     .restaurants{     
+          @include zeroLeftRightMargPadd(0,0,0,0);    
+          padding-bottom: 0;
+          margin-bottom: 0;
+          background-color: rgb(230, 230, 230);   
+     }
+     .restaurants h2{
+          transform: translateX(5%);
+          font-size:1.4rem;
+          font-weight: bold;
+          font-family: "roboto";
+          padding-top: 45px;
+     }
+     .AlignIMG{
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-around;
+     }
+     .AllIMGRestaurants{
+          padding-top: 0px;
+          padding-bottom: 0px;
+          margin-top: 5px;
+          margin-left: 40px;
+          width: 18%;
+          
+     }
+     .IMGandAllRestaurants{
+          background-color: white;
+          border-radius: 20px;
+          box-shadow: 0px 0px 10px 4px rgba(175, 175, 175, 0.675);
+          margin-bottom: 0px;    
+      }
+     .IMGRestaurants{
+          width: 100%;
+          border-radius: 20px 20px 0 0;
+          height: 165px
+      }
+      .textUnderIMG{
+          font-family: "roboto";
+          height: 60px;
+          padding: 0;
+          margin: 0;
+      }
+      .textUnderIMG h3{
+          font-family: "roboto";
+          padding: 0;
+          color: black;
+          margin: 5px 0 5px 15px;
+      }
+      .textUnderIMG div{
+          font-family: "roboto";
+          padding: 0;
+          color: gray;
+          margin: 0 0 5px 15px;
+      }
+      .heart :nth-child(2n) {
+          display: none;
+     }
+     .heart{
+          border: none;
+          background-color:transparent;
+          position: relative;
+          left: 85%;
+          bottom: 45px;
+          font-size: 1.5rem;
+          animation-name : KOEUR ;
+         // transition-duration: 5s;
+         //transition-timing-function: ease;
+         // animation-duration: 5s;
+          &:hover {
+              :nth-child(1) {  
+                   display: none;
+              }
+              :nth-child(2) {
+                   animation-name: KOEUR;
+                   animation-duration: 2s;
+                   display: inline-block;
+                   background: linear-gradient(#a67add,#ffa1e4);
+                   background-clip: text;
+                   -webkit-text-fill-color:transparent;
+                   -webkit-background-clip: text ;  
+                   @keyframes KOEUR {
+                        from { display: inline-block;
+                             background: linear-gradient(#a67add,#ffa1e4);
+                             background-clip: text;
+                             -webkit-text-fill-color:transparent;
+                             -webkit-background-clip: text ;
+                             opacity: 0%; 
+                         }
+                   }
+                        to {
+                        display: inline-block;
+                   background: linear-gradient(#a67add,#ffa1e4);
+                   background-clip: text;
+                   -webkit-text-fill-color:transparent;
+                   -webkit-background-clip: text ;  
+                   opacity: 100%;
+                   }
+                  
+                   
+                   //transition-duration: 5s;
+                   //transition-timing-function: ease;
+                   //animation-duration: 5s;
+                    
+                                                                       
+              }
+         }
+    }
+
+
+      .newText{
+          position: relative;
+          left: 50%;
+          display: inline;
+          bottom: 220px;
+          background-color: turquoise;
+          color: green;
+          padding: 10px;
+          margin-right: 15px;
+          font-family: "roboto";
+      }
+
+      //----------FOOTER----------->
+      
+      footer {
+           background-color: black;
+           padding-bottom: 0;
+           margin-bottom: 0;
+          
+      }
+      .allFooter{
+          transform: translateX(10%);
+          padding-bottom: 40px;
+          height: 200px;
+          
+      }
+      h4{
+          padding-top: 20px;
+          margin-top: 0;
+          color: white;
+          font-size: 1.2rem;
+          font-family: "shrikhand";
+          
+      }
+      footer div{     
+          padding-top: 2px;
+          padding-bottom: 2px;
+          color: white;
+          font-size: 1rem;
+          font-family: "roboto";
+          padding-bottom: 0;
+           margin-bottom: 0;
+      }
+      .alignFooterText{
+           display: flex;
+          flex-wrap: wrap;
+     }
+     .alignFooterText i {
+          padding-right: 10px;
+     }
+     .noDeco a {
+          text-decoration: none;
+          color: white;    
+     }
+}

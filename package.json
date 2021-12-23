@@ -1,0 +1,19 @@
+{
+  "name": "maquettes-ohmyfood",
+  "version": "1.0.0",
+  "description": "Site Openclassrooms",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch methode.scss:style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/denizdort372/KevinOzkaraca_3_04012021.git"
+  },
+  "author": "Kevin Deniz Özkaraca",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/denizdort372/KevinOzkaraca_3_04012021/issues"
+  },
+  "homepage": "https://github.com/denizdort372/KevinOzkaraca_3_04012021#readme"
+}
